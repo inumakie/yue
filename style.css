@@ -26,13 +26,14 @@ main {
 }
 
 .youtube-container {
-    margin: 30px 0;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
 }
 
 .youtube {
+    margin: auto;
     max-width: 300px;
     border: 2px dotted magenta;
     border-radius: 20px;
@@ -43,6 +44,7 @@ main {
 }
 
 .spotify-container {
+    margin: auto;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
@@ -70,4 +72,26 @@ main {
 
 #chocolate {
     margin: 20px;
+}
+
+@media (max-width: 650px){
+    .youtube-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .youtube {
+        margin: 20px;
+    }
+
+    .spotify-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .spotify {
+        margin: 20px;
+    }
+
+
 }
